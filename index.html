@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta chatset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <title>Examen Musical BN</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"> 
+        <link rel="stylesheet" type="text/css" href=""> 
+        <link rel="icon"  href="imgs/music-note.svg"> 
+
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"> 
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"> 
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'> 
+        <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body >
+
+        <div class="container" >
+            <h1 class="text-center" id="up" >Examen Musical 
+                Prof: <span data-toggle="tooltip" title="The best Teacher ever 😂😂😂jjj ">Bradigson</span></h1>
+            <form class="form-group" id="form-info">
+
+                <label for="name"><h2>Nombre:</h2></label>
+                <input type="text" name="" value="" id="name" placeholder="Su nombre aca"><span id="s1"></span><br><br>
+                <label for="instrument"><h2>Instrumento:</h2></label>
+                <input type="text" name="" value="" id="instrument" placeholder="Su instrumento aca" data-toggle="tooltip" title="Desbes de iscribir el instrumento sin mayuscula"><span id="s2"></span><br><br>
+                <button class="btn btn-primary" id="btn-start">Empezar Examen!</button>
+            </form>    
+            <form name="examen" id="examen">
+                <div id="div1">
+                    <p>1.¿Cuales son los nombres de las notas sobre las lineas de un pentagrama con clave de sol?</p>
+                    <p><input type="radio" class="form-check-input" name="q1" value="a"> A. Mi, Sol, Si, Re, Fa</p>
+                    <p><input type="radio" class="form-check-input" name="q1" value="b"> B. Mi, Sol, La, Re, Fa</p>
+                    <p><input type="radio" class="form-check-input" name="q1" value="c"> C. Mi, Sol, Si, Do, Sol</p>
+                    <p><input type="radio" class="form-check-input" name="q1" value="d"> D. Mi, Si, Si, Re, Fa</p>
+                </div>
+                <div id="div1">
+                    <p>2.¿Cuáles son los nombres de las notas en los espacios en la clave de FA ?</p>
+                    <p><input type="radio" class="form-check-input" name="q2" value="a"> A. La, Re, Sol, Mi</p>
+                    <p><input type="radio" class="form-check-input" name="q2" value="b"> B. Fa, Re, Sol, Re</p>
+                    <p><input type="radio" class="form-check-input" name="q2" value="c"> C. La, Do, Mi, Sol</p>
+                    <p><input type="radio" class="form-check-input" name="q2" value="d"> D. Do, La, Sol, Mi</p>
+                </div>
+
+                <div id="div1">
+                    <p>3.¿Qué  es un Pentagrama Musical?</p>
+                    <p><input type="radio" lass="form-check-input" name="q3" value="a"> A. Una estrella</p>
+                    <p><input type="radio" lass="form-check-input" name="q3" value="b"> B. Conjunto de 5 lineas y 4 espacios</p>
+                    <p><input type="radio" lass="form-check-input" name="q3" value="c"> C. Una clave musical</p>
+
+                </div>
+                <div id="div1">
+                    <p>4.¿Cuál es la clave musical que se utiliza para la mano izquierda?</p>
+                    <p><input type="radio"class="form-check-input" name="q4" value="a"> A. clave de Sol</p>
+                    <p><input type="radio"class="form-check-input" name="q4" value="b"> B. clave de Si#</p>
+                    <p><input type="radio"class="form-check-input" name="q4" value="c"> C. clave de Do</p>
+                    <p><input type="radio"class="form-check-input" name="q4" value="d"> D. clave de Fa</p>
+
+                </div>
+                <div id="div1">
+                    <p>5.¿Cunatos sonidos musicales son?</p>
+                    <p><input type="radio" class="form-check-input" name="q5" value="a"> A. 10</p>
+                    <p><input type="radio" class="form-check-input" name="q5" value="b"> B. 5</p>
+                    <p><input type="radio" class="form-check-input" name="q5" value="c"> C. 7</p>
+                    <p><input type="radio" class="form-check-input" name="q5" value="D"> D. 8</p>
+                </div>
+
+                <div id="div1">
+                    <p>6.¿Qué representan las figuras musicales ?</p>
+                    <p><input type="radio" class="form-check-input" name="q6" value="a"> A. Representan sonidos</p>
+                    <p><input type="radio" class="form-check-input" name="q6" value="b"> B. Representan tonicas</p>
+                    <p><input type="radio" class="form-check-input" name="q6" value="c"> C. Representan Canciones</p>
+                    <p><input type="radio" class="form-check-input" name="q6" value="d"> D. Representan Artistas</p>
+                    
+                </div>
+                <div id="div1">
+                    <p>7.La digitación son los números que se les asignan a los dedos de las manos.</p>
+                    <p><input type="radio" class="form-check-input" name="q7" value="true"> Verdadero</p>
+                    <p><input type="radio" class="form-check-input" name="q7" value="false"> Falso</p>
+                </div>
+
+                <div id="div1">
+                    <p>8.¿Cuál es la representacion grafia del sostenido?</p>
+                    <p><input type="radio" class="form-check-input" name="q8" value="a"> A. %</p>
+                    <p><input type="radio" class="form-check-input" name="q8" value="b"> B. b</p>
+                    <p><input type="radio" class="form-check-input" name="q8" value="c"> C. $</p>
+                    <p><input type="radio" class="form-check-input" name="q8" value="a"> D. #</p>
+                </div>
+                <div id="div1">
+                    <p>9.La clave de fa es para la mano derecha y la de sol para la izquierda</p>
+                    <p><input type="radio" class="form-check-input" name="q9" value="true"> Verdadero</p>
+                    <p><input type="radio" class="form-check-input" name="q9" value="false"> Falso</p>
+                </div>
+                <div id="div1">
+                    <p>10.¿Que cifrado representa a fa?</p>
+                    <p><input type="radio" class="form-check-input" name="q10" value="d"> A. D</p>
+                    <p><input type="radio" class="form-check-input" name="q10" value="f"> B. F</p>
+                    <p><input type="radio" class="form-check-input" name="q10" value="e"> C. E</p>
+                </div>
+                <div id="div1">
+                    <p>11.El conjunto de 5 líneas y 4 espacios donde se escribe la música se llama</p>
+                    <p><input type="radio" class="form-check-input" name="q11" value="a"> A. Clave</p>
+                    <p><input type="radio" class="form-check-input" name="q11" value="b"> B. Compás</p>
+                    <p><input type="radio" class="form-check-input" name="q11" value="c"> C. Negra</p>
+                    <p><input type="radio" class="form-check-input" name="q11" value="d"> D. Pentagrama
+                    </p>
+                </div>
+
+                <div id="div1">
+                    <p>12.¿Cómo se llama este símbolo musical?</p>
+                    <img src="imgs/bemol.png" alt="">
+                    <p><input type="radio" cclass="form-check-input" name="q12" value=""> A. Sostenido</p>
+                    <p><input type="radio" cclass="form-check-input" name="q12" value=""> B. Becuadro</p>
+                    <p><input type="radio" cclass="form-check-input" name="q12" value=""> C. Bemol</p>
+                    <p><input type="radio" cclass="form-check-input" name="q12" value=""> D. Corchea</p>
+                </div>
+                <div id="div1">
+                    <p>13.Una escala musical es la sucesión de 8 notas</p>
+                    <p><input type="radio" class="form-check-input" name="q13" value="true"> Verdadero</p>
+                    <p><input type="radio" class="form-check-input" name="q13" value="false"> Falso</p>
+                </div>
+                <div id="div1">
+                    <p>14.Cuando un cifrado tiene un m minuscula, este indica que es:</p>
+                    <p><input type="radio" class="form-check-inpuy" name="q14" value="a"> A. Mayor</p>
+                    <p><input type="radio" class="form-check-inpuy" name="q14" value="b"> B. Menor</p>
+                    <p><input type="radio" class="form-check-inpuy" name="q14" value="c"> C. Disminuido</p>
+                
+                </div>
+                <div id="div1">
+                    <p>15.Los cifrados representan los sonidos musicales.</p>
+                    <p><input type="radio" class="form-check-input" name="q15" value="true"> Verdadero</p>
+                    <p><input type="radio" class="form-check-input" name="q15" value="false"> Falso</p>
+                </div>
+
+            
+                <button class="btn btn-success" id="boton">DONE</button>
+            </form>
+            <a href="#up"><i class='bx bxs-up-arrow-circle'></i></a>
+        </div>
+
+
+        
+        <script src="js/code.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+              <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+    </body>
+</html>

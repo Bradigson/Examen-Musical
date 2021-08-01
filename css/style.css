@@ -1,0 +1,81 @@
+#div1{
+    background:rgba(214, 234, 248 );
+    padding:15px 15px;
+    margin-bottom:30px;
+    user-select:none;
+}
+#boton{
+    margin-top:25px;
+    width:150px;
+    margin-bottom:20px;
+
+}
+.container{
+    padding-top:30px;
+}
+.container h1{
+    user-select: none;
+    margin-bottom:30px;
+}
+#form-info{
+   
+    margin-bottom:30px;
+    
+}
+#form-info label >h2{
+    font-size:25px;
+}
+#name, #instrument{
+    border:unset;
+    border-bottom:1px solid #000;
+    margin-left:20px;
+    outline:none;
+    padding-left:10px;
+    transition:all 1s;
+}
+#name:focus{
+    background:rgba(214, 234, 248 );  
+}
+#instrument:focus{
+    background:rgba(214, 234, 248 );
+    
+}
+html{
+    scroll-behavior:smooth;
+}
+.bxs-up-arrow-circle{
+    position:fixed;
+    font-size:60px;
+    top:680px;
+    right:15px;
+    animation-name:up;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    border-radius:20rem;
+    
+}
+@keyframes up{
+    0%{
+        box-shadow: 0 0 0 0 rgb(94, 146, 241,.7);
+    }
+    70%{
+        box-shadow: 0 0 0 10px rgb(94, 146, 241,.0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgb(94, 146, 241,.0);
+    }
+}
+#examen{
+    display:none;
+}
+span{
+    transition:all 1s;
+}
+span:hover{
+    color:blue;
+}
+#s1, #s2{
+    margin-left:20px;
+    color:#ff0000;
+    
+}
