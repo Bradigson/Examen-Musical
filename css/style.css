@@ -25,10 +25,14 @@
 #form-info label >h2{
     font-size:25px;
 }
-#name, #instrument{
+#codigo{
+    width:220px;
+  
+}
+#name, #instrument, #codigo{
     border:unset;
     border-bottom:1px solid #000;
-    margin-left:20px;
+    margin-left:40px;
     outline:none;
     padding-left:10px;
     transition:all 1s;
@@ -37,6 +41,10 @@
     background:rgba(214, 234, 248 );  
 }
 #instrument:focus{
+    background:rgba(214, 234, 248 );
+    
+}
+#codigo:focus{
     background:rgba(214, 234, 248 );
     
 }
@@ -74,8 +82,68 @@ span{
 span:hover{
     color:blue;
 }
-#s1, #s2{
-    margin-left:20px;
+#s1, #s2, #s3{
+    margin-left:60px;
     color:#ff0000;
+    
+}
+
+
+
+#resultado-bajo{
+    height:65px;
+    background:rgba(231, 76, 60);
+    padding-left:20px;
+    padding-top:1px;
+    border-radius:5px;
+    margin-bottom:15px;
+    display:none;
+    
+}
+#resultado-medio{
+    background:rgba(214, 137, 16);
+    padding-left:20px;
+    padding-top:1px;
+    border-radius:5px;
+    height:65px;
+    margin-bottom:15px;
+    display:none;
+
+
+}
+#resultado-excelenete{
+    background:rgba(39, 174, 96 );
+    padding-left:20px;
+    padding-top:1px;
+    border-radius:5px;
+    height:65px;
+    display:none;
+    
+
+
+}
+
+
+/*media query*/
+@media screen and (min-width:1024px){
+    
+    .container h1{
+        
+        text-align:center;
+
+    }
+}
+
+@media screen and (max-width:414px){
+   
+ 
+    #s1, #s2, #s3{
+      
+        margin-top:0px;
+    }
+    #form-info{
+        display:flex;
+        flex-direction:column;
+    }
     
 }

@@ -27,7 +27,9 @@
                 <input type="text" name="" value="" id="name" placeholder="Su nombre aca"><span id="s1"></span><br><br>
                 <label for="instrument"><h2>Instrumento:</h2></label>
                 <input type="text" name="" value="" id="instrument" placeholder="Su instrumento aca" data-toggle="tooltip" title="Desbes de iscribir el instrumento sin mayuscula"><span id="s2"></span><br><br>
-                <button class="btn btn-primary" id="btn-start">Empezar Examen!</button>
+                <label for="codigo"><h2>Codigo:</h2></label>
+                <input type="text" name="" value="" placeholder="Introduzca su codigo aca" id="codigo"><span id="s3"></span><br><br>
+                <button class="btn btn-primary" id="btn-start" >Empezar Examen!</button>
             </form>    
             <form name="examen" id="examen">
                 <div id="div1">
@@ -47,9 +49,9 @@
 
                 <div id="div1">
                     <p>3.¿Qué  es un Pentagrama Musical?</p>
-                    <p><input type="radio" lass="form-check-input" name="q3" value="a"> A. Una estrella</p>
-                    <p><input type="radio" lass="form-check-input" name="q3" value="b"> B. Conjunto de 5 lineas y 4 espacios</p>
-                    <p><input type="radio" lass="form-check-input" name="q3" value="c"> C. Una clave musical</p>
+                    <p><input type="radio" class="form-check-input" name="q3" value="a"> A. Una estrella</p>
+                    <p><input type="radio" class="form-check-input" name="q3" value="b"> B. Conjunto de 5 lineas y 4 espacios</p>
+                    <p><input type="radio" class="form-check-input" name="q3" value="c"> C. Una clave musical</p>
 
                 </div>
                 <div id="div1">
@@ -70,8 +72,8 @@
 
                 <div id="div1">
                     <p>6.¿Qué representan las figuras musicales ?</p>
-                    <p><input type="radio" class="form-check-input" name="q6" value="a"> A. Representan sonidos</p>
-                    <p><input type="radio" class="form-check-input" name="q6" value="b"> B. Representan tonicas</p>
+                    <p><input type="radio" class="form-check-input" name="q6" value="a"> A. Representan Sonidos</p>
+                    <p><input type="radio" class="form-check-input" name="q6" value="b"> B. Representan Tonicas</p>
                     <p><input type="radio" class="form-check-input" name="q6" value="c"> C. Representan Canciones</p>
                     <p><input type="radio" class="form-check-input" name="q6" value="d"> D. Representan Artistas</p>
                     
@@ -87,7 +89,7 @@
                     <p><input type="radio" class="form-check-input" name="q8" value="a"> A. %</p>
                     <p><input type="radio" class="form-check-input" name="q8" value="b"> B. b</p>
                     <p><input type="radio" class="form-check-input" name="q8" value="c"> C. $</p>
-                    <p><input type="radio" class="form-check-input" name="q8" value="a"> D. #</p>
+                    <p><input type="radio" class="form-check-input" name="q8" value="d"> D. #</p>
                 </div>
                 <div id="div1">
                     <p>9.La clave de fa es para la mano derecha y la de sol para la izquierda</p>
@@ -112,10 +114,10 @@
                 <div id="div1">
                     <p>12.¿Cómo se llama este símbolo musical?</p>
                     <img src="imgs/bemol.png" alt="">
-                    <p><input type="radio" cclass="form-check-input" name="q12" value=""> A. Sostenido</p>
-                    <p><input type="radio" cclass="form-check-input" name="q12" value=""> B. Becuadro</p>
-                    <p><input type="radio" cclass="form-check-input" name="q12" value=""> C. Bemol</p>
-                    <p><input type="radio" cclass="form-check-input" name="q12" value=""> D. Corchea</p>
+                    <p><input type="radio" class="form-check-input" name="q12" value="a"> A. Sostenido</p>
+                    <p><input type="radio" class="form-check-input" name="q12" value="b"> B. Becuadro</p>
+                    <p><input type="radio" class="form-check-input" name="q12" value="c"> C. Bemol</p>
+                    <p><input type="radio" class="form-check-input" name="q12" value="d"> D. Corchea</p>
                 </div>
                 <div id="div1">
                     <p>13.Una escala musical es la sucesión de 8 notas</p>
@@ -123,10 +125,10 @@
                     <p><input type="radio" class="form-check-input" name="q13" value="false"> Falso</p>
                 </div>
                 <div id="div1">
-                    <p>14.Cuando un cifrado tiene un m minuscula, este indica que es:</p>
-                    <p><input type="radio" class="form-check-inpuy" name="q14" value="a"> A. Mayor</p>
-                    <p><input type="radio" class="form-check-inpuy" name="q14" value="b"> B. Menor</p>
-                    <p><input type="radio" class="form-check-inpuy" name="q14" value="c"> C. Disminuido</p>
+                    <p>14.Cuando un cifrado tiene una m minuscula, este indica que es:</p>
+                    <p><input type="radio" class="form-check-input" name="q14" value="a"> A. Mayor</p>
+                    <p><input type="radio" class="form-check-input" name="q14" value="b"> B. Menor</p>
+                    <p><input type="radio" class="form-check-input" name="q14" value="c"> C. Disminuido</p>
                 
                 </div>
                 <div id="div1">
@@ -136,9 +138,16 @@
                 </div>
 
             
+                
+            
                 <button class="btn btn-success" id="boton">DONE</button>
             </form>
-            <a href="#up"><i class='bx bxs-up-arrow-circle'></i></a>
+            <div cclass="card" id="resultados">
+                <div  id="resultado-bajo"><p><h3 id="r1"></h3></p></div>
+                <div  id="resultado-medio"><p><h3 id="r2"></h3></p></div>
+                <div  id="resultado-excelenete"><p><h3 id="r3"></h3></p></div>
+            </div>
+            <a href="#up" id="a"><i class='bx bxs-up-arrow-circle'></i></a>
         </div>
 
 
